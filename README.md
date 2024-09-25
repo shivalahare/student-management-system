@@ -20,7 +20,7 @@ git clone https://github.com/shivalahare/student-management-system.git
 Navigate to the project directory:
 
 ```bash
-cd student-management
+cd student_management
 ```
 
 ### 2. Set Up a Virtual Environment
