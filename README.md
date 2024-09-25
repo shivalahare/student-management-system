@@ -14,13 +14,13 @@ This is a Django-based student management system.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/shivalahare/task-management-system.git
+git clone https://github.com/shivalahare/student-management-system.git
 ```
 
 Navigate to the project directory:
 
 ```bash
-cd task_management
+cd student-management
 ```
 
 ### 2. Set Up a Virtual Environment
