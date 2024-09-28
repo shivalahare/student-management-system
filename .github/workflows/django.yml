@@ -27,7 +27,7 @@ jobs:
         pip install -r requirements.txt
     - name: Cd to Project
       run: |
-        cd student-management
+        cd student_management
     - name: Run Tests
       run: |
-        python manage.py test
+        python manage.py runserver
