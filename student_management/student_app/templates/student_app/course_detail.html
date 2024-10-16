@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ course.name }} - Detail</title>
+</head>
+<body>
+    <h1>Course Details</h1>
+    <p><strong>Course Name:</strong> {{ course.name }}</p>
+    <p><strong>Description:</strong> {{ course.description }}</p>
+    <p><strong>Duration:</strong> {{ course.duration }}</p>
+    <p><strong>Instructor:</strong> {{ course.instructor }}</p>
+
+    <a href="{% url 'course_edit' pk=course.pk %}">Edit</a>
+    <a href="{% url 'course_list' %}">Back to List</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ teacher.first_name }} {{ teacher.last_name }} - Detail</title>
+</head>
+<body>
+    <h1>Teacher Details</h1>
+    <p><strong>First Name:</strong> {{ teacher.first_name }}</p>
+    <p><strong>Last Name:</strong> {{ teacher.last_name }}</p>
+    {% comment %} <p><strong>Date of Birth:</strong> {{ teacher.date_of_birth }}</p>
+    <p><strong>Gender:</strong> {{ teacher.gender }}</p>
+    <p><strong>Address:</strong> {{ teacher.address }}</p> {% endcomment %}
+    <p><strong>Phone Number:</strong> {{ teacher.phone_number }}</p>
+    <p><strong>Email:</strong> {{ teacher.email }}</p>
+    {% comment %} <p><strong>Enrollment Date:</strong> {{ teacher.enrollment_date }}</p>
+    <p><strong>Course:</strong> {{ teacher.course }}</p>
+    <p><strong>Batch:</strong> {{ teacher.batch }}</p> {% endcomment %}
+    <p><strong>Profile Picture:</strong> <img src="{{ teacher.profile_picture.url }}" alt="Profile Picture" /></p>
+
+    <a href="{% url 'teacher_edit' pk=teacher.pk %}">Edit</a>
+    <a href="{% url 'teacher_list' %}">Back to List</a>
+</body>
+</html>

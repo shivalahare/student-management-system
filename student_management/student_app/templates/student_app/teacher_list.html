@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Teachers</h1>
+  <a href="{% url 'teacher_add' %}">Add Teacher</a>
+  <ul>
+    {% for teacher in teachers %}
+      <li>
+        <a href="{% url 'teacher_detail' pk=teacher.pk %}">{{ teacher.first_name }} {{ teacher.last_name }}</a>
+        <a href="{% url 'teacher_edit' pk=teacher.pk %}">Edit</a>
+        <a href="{% url 'teacher_delete' pk=teacher.pk %}">Delete</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

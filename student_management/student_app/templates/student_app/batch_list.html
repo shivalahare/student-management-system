@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Batches</h1>
+  <a href="{% url 'batch_add' %}">Add Batch</a>
+  <ul>
+    {% for batch in batches %}
+      <li>
+        <a href="{% url 'batch_detail' pk=batch.pk %}">{{ batch.name }} {{ batch.start_date }} {{ batch.end_date }} {{ batch.course }}</a>
+        <a href="{% url 'batch_edit' pk=batch.pk %}">Edit</a>
+        <a href="{% url 'batch_delete' pk=batch.pk %}">Delete</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

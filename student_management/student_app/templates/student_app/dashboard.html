@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Dashboard</h1>
+  <a href="{% url 'student_list' %}">Students</a>
+  <a href="{% url 'teacher_list' %}">Teachers</a>
+  <a href="{% url 'course_list' %}">Courses</a>
+  <a href="{% url 'batch_list' %}">Batches</a>
+{% endblock %}
